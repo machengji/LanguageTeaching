@@ -1,4 +1,3 @@
-
 // #ifndef VUE3
 import Vue from 'vue'
 import App from './App'
@@ -16,8 +15,12 @@ app.$mount()
 // #ifdef VUE3
 import { createSSRApp } from 'vue'
 import App from './App.vue'
+import { createPinia } from 'pinia'
+
 export function createApp() {
-  const app = createSSRApp(App)
+  const app = createSSRApp(App) // 先创建 Vue 应用实例
+  const pinia = createPinia()
+  app.use(pinia) // 然后挂载 Pinia
   return {
     app
   }

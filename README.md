@@ -4,7 +4,7 @@
 *  状态管理: [Pinia](https://pinia.vuejs.org/) 2.0.33
 *  样式处理: [Sass/SCSS](https://sass-lang.com/) 1.52.1
 *  HTTP 请求: [Axios](https://axios-http.com/) 0.27.2
-*  UI 组件库: [uView UI](https://uviewui.com/) 2.0
+*  UI 组件库: [uview-plus3.0](https://github.com/ijry/uview-plus) 
 *  构建工具: [HBuilderX](https://www.dcloud.io/hbuilderx.html) <!-- [Vue CLI](https://cli.vuejs.org/)-->
 *  Node.js: 18
 *  npm: 10.8.2
