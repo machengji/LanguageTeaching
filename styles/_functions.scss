@@ -1,0 +1,13 @@
+// src/styles/_functions.scss
+
+// 示例：将 px 值转换为 rpx (假设设计稿基准宽度为 750px)
+@function px-to-rpx($px) {
+  @return ($px / 750) * 100rpx;
+}
+
+// 示例：根据百分比值返回 rgba 颜色
+@function color-alpha($color, $alpha) {
+  @return rgba($color, $alpha);
+}
+
+// ... 其他自定义函数

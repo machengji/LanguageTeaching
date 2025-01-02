@@ -1,0 +1,142 @@
+// src/styles/global.scss
+
+// --------------------------------------------------------------------------
+// 1. 导入局部文件 (Partials)
+// --------------------------------------------------------------------------
+
+@import './_variables.scss';   // 全局变量
+@import './_mixins.scss';      // 可复用的 Mixin
+@import './_functions.scss';   // 自定义函数 
+@import './_reset.scss';        // CSS Reset 或Normalize
+
+// --------------------------------------------------------------------------
+// 2. 全局基础样式 (Base Styles)
+// --------------------------------------------------------------------------
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-font-smoothing: antialiased; // 改善字体渲染
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// 标题样式
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: $spacer-sm;
+  font-weight: bold;
+  line-height: $line-height-heading;
+  color: $heading-color;
+}
+
+h1 { font-size: $h1-font-size; }
+h2 { font-size: $h2-font-size; }
+h3 { font-size: $h3-font-size; }
+h4 { font-size: $h4-font-size; }
+h5 { font-size: $h5-font-size; }
+h6 { font-size: $h6-font-size; }
+
+// 段落
+p {
+  margin-top: 0;
+  margin-bottom: $spacer-base;
+}
+
+// 链接
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+}
+
+// ... 其他全局基础样式 (例如：列表、表格等)
+
+// --------------------------------------------------------------------------
+// 3. 全局布局相关样式 (Layout)
+// --------------------------------------------------------------------------
+
+.container {
+  width: 100%;
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $grid-gutter-width / 2;
+  padding-right: $grid-gutter-width / 2;
+}
+
+// ... 其他全局布局相关的类 (例如：栅格系统、间距工具类)
+
+// --------------------------------------------------------------------------
+// 4. 全局通用工具类 (Utilities)
+// --------------------------------------------------------------------------
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.visible {
+  display: block !important;
+}
+
+// ... 其他全局通用的工具类 (例如：颜色、间距、浮动等)
+
+// --------------------------------------------------------------------------
+// 5. 组件的全局样式覆盖 (Component Overrides - 谨慎使用)
+// --------------------------------------------------------------------------
+
+// 注意：尽量避免在这里直接覆盖第三方组件的样式，
+// 优先使用组件提供的 props 或 theme 进行定制。
+// 如果必须覆盖，请添加清晰的注释说明原因。
+
+// 例如：修改 uni-ui 组件的某个样式 (示例)
+/*
+.uni-button {
+  border-radius: $border-radius-lg !important;
+}
+*/
+
+// --------------------------------------------------------------------------
+// 6. 响应式断点相关的样式 (Responsive Breakpoints)
+// --------------------------------------------------------------------------
+
+// 可以使用 Mixin 来简化媒体查询的书写
+@include breakpoint(md) {
+  // 在中等屏幕尺寸及以上应用的样式
+}
+
+@include breakpoint(lg) {
+  // 在大型屏幕尺寸及以上应用的样式
+}
+
+// ... 其他响应式断点
+
+// --------------------------------------------------------------------------
+// 7. 其他全局样式
+// --------------------------------------------------------------------------
+
+// 你可以根据项目需求添加其他全局样式
