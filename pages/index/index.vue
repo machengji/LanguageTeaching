@@ -15,11 +15,18 @@
 
 <script setup>
 import { ref } from 'vue';
-
+import { onShow } from '@dcloudio/uni-app'; // 引入 uni-app 的 onShow
 
 import MyTabBar from '@/components/tabar/tabar.vue'; // 引入 MyTabBar 组件
 
-
+// onShow 生命周期
+onShow(() => {
+	uni.hideTabBar({
+	  animation: false // 可以设置为 false，避免动画可能带来的问题
+	});
+  console.log('页面显示了');
+  // 在这里执行页面显示时的逻辑
+});
 const navigateToDemo = () => {
 	uni.switchTab({
 		url: '/pages/demo/demo'

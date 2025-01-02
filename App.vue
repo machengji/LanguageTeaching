@@ -5,9 +5,15 @@ export default {
 		// uni.hideTabBar();
 	},
 	onShow: function () {
-		uni.hideTabBar({
-		    animation: true // 是否使用动画隐藏
-		  });
+		// uni.hideTabBar({
+		//   animation: false // 可以设置为 false，避免动画可能带来的问题
+		// });
+		 // setTimeout(() => {
+		 //      uni.hideTabBar({
+		 //        animation: false // 可以设置为 false，避免动画可能带来的问题
+		 //      });
+		 //    }, 1000);
+		    // console.log('App Show');
 		console.log('App Show');
 		
 	},
