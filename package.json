@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "normalize.css": "^8.0.1",
-    "pinia": "^2.3.0"
+    "pinia": "^2.3.0",
+    "vue-i18n": "^9.14.2"
   }
 }

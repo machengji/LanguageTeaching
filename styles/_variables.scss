@@ -10,6 +10,10 @@ $warning-color: #ffc107;
 $danger-color: #dc3545;
 $info-color: #17a2b8;
 
+// 添加链接颜色
+$link-color: $primary-color;  // 使用主色作为链接颜色
+$link-hover-color: darken($link-color, 15%);  // 悬停时颜色加深
+
 $text-color: #333;
 $text-color-secondary: #666;
 $text-color-light: #999;
@@ -25,6 +29,14 @@ $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mon
 $font-size-base: 16px;
 $font-size-sm: 14px;
 $font-size-lg: 18px;
+
+// 添加标题字体大小
+$h1-font-size: $font-size-base * 2.5;    // 40px
+$h2-font-size: $font-size-base * 2;      // 32px
+$h3-font-size: $font-size-base * 1.75;   // 28px
+$h4-font-size: $font-size-base * 1.5;    // 24px
+$h5-font-size: $font-size-base * 1.25;   // 20px
+$h6-font-size: $font-size-base;          // 16px
 
 $font-weight-light: 300;
 $font-weight-normal: 400;
@@ -52,5 +64,8 @@ $breakpoint-xl: 1200px;
 
 // 容器最大宽度
 $container-max-width: 1140px;
+
+// 网格系统
+$grid-gutter-width: 30px;  // 网格槽的宽度
 
 // 其他变量 (根据你的项目需求添加)

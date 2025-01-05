@@ -1,0 +1,9 @@
+{
+  "hello": "Hello World!",
+  "welcome": "Welcome to My Awesome App!",
+   "message":"test",
+  "button": {
+    "submit": "Confirm",
+    "cancel": "Discard"
+  }
+}

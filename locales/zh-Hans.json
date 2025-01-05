@@ -1,0 +1,9 @@
+{
+  "hello": "你好，世界！",
+  "welcome": "欢迎来到我的超棒应用！",
+  "message": "测试",
+  "button": {
+    "submit": "确认",
+    "cancel": "取消"
+  }
+}

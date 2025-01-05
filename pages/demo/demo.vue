@@ -11,7 +11,7 @@
 			<button @click="increment">Increment</button>
 			<button @click="decrement">Decrement</button>
 			<button @click="incrementBy(5)">Increment by 5</button>
-			<MyTabBar />
+		<!-- 	<MyTabBar /> -->
 		</view>
 	</view>
 </template>
