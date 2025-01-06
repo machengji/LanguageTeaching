@@ -8,7 +8,7 @@
 *  构建工具: [HBuilderX](https://www.dcloud.io/hbuilderx.html) <!-- [Vue CLI](https://cli.vuejs.org/)-->
 *  Node.js: 18
 *  npm: 10.8.2
-
+1
 ## 项目目录
 pages: 存放应用的所有页面。
 components: 存放可复用的组件。
